@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchCandidates = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/candidates');
+        const response = await axios.get('https://assignment-backend-f2ry.onrender.com/api/candidates');
         setCandidates(response.data);
       } catch (error) {
         console.error('Error fetching candidates:', error);

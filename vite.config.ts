@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
+        target: 'https://assignment-backend-f2ry.onrender.com',
         changeOrigin: true
       }
     }
